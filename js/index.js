@@ -103,10 +103,12 @@ let onclickButtonText = document.createTextNode(newContent.heading);
 onclickButton.append(onclickButtonText);
 document.querySelector(".cta").append(onclickButton);
 
+
+
+
 onclickButton.addEventListener('click', (callback) => { 
-  
-  event.target.style.backgroundColor = 'blue' 
+  event.target.style.backgroundColor =  event.target.style.backgroundColor=== 'white' ? 'buttonface': 'white'; 
 });
 
-
+onclickButton.style.width = '100%';
 
